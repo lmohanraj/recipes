@@ -15,10 +15,10 @@ function App() {
         <div className='container'>
         {recipes.map( (recipe) => {
           return(
-            <div>
-              <img className='image' src={recipe.url} alt={recipe.name} />
-              <h4>{recipe.name}</h4>
-              <h6>Time: <span>{recipe.time}</span></h6>
+            <div className='recipeContainer'>
+              <div className='imageContainer'><img className='image' src={recipe.url} alt={recipe.name} /></div>
+              <h3 className='name'>{recipe.name}</h3>
+              <h5>Time: <span>{recipe.time}</span></h5>
             </div>
           );
         })}
